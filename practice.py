@@ -458,3 +458,20 @@
 # z = 15
 # del x, y, z  # deletes all three variables from memory
 # print(x, y, z)  # raises an error: NameError: name 'x' is not defined
+
+
+# User-Defined =>
+# def show(x):
+#         x = input("input string")
+#         print(x)
+#         if __name__ == "__main__":
+#          return show(x)
+
+
+# def display():
+#         print("good morning")
+
+# def wish():
+#         print("Happy Birthday!")
+
+
