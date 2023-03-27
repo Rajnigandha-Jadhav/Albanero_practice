@@ -468,8 +468,10 @@
 #          return show(x)
 
 
-# def display():
-#         print("good morning")
+def display():
+        print(__name__)
+        print("good morning")
+display()
 
 # def wish():
 #         print("Happy Birthday!")

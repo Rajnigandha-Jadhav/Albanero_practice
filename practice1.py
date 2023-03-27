@@ -70,7 +70,7 @@
 # Standard modules are available for use in any Python program and can be imported using the import statement.
 
 # 1) math module: This module provides mathematical functions like sin, cos, sqrt, etc.
-import math
+# import math
 
 # Calculate the square root of a number
 # x = 16
