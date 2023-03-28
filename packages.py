@@ -20,10 +20,10 @@
 # Formatted String Literals :=> In Python, formatted string literals, also known as f-strings, 
 # are a way to embed expressions inside string literals.
 
-name = "abc"
-school = "JNV"
-print(f"my name is {name} and I am from {school} school.")
+# name = "abc"
+# school = "JNV"
+# print(f"my name is {name} and I am from {school} school.")
 
-a = 10
-b = 20
-print(f"The product of {a} and {b} is {a*b}")
+# a = 10
+# b = 20
+# print(f"The product of {a} and {b} is {a*b}")
