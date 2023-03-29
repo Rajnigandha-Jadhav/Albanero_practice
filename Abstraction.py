@@ -8,70 +8,120 @@
 # Objects can't be created for abstract methods. It can be created for concrete class.
 
 # Example 1 :=>
-from abc import ABC,abstractmethod
-class AbstractDemo(ABC):  #Abstract class
+# from abc import ABC,abstractmethod
+# class AbstractDemo(ABC):  #Abstract class
+#     @abstractmethod
+#     def display(self):
+#         None
+
+# class Demo(AbstractDemo): #Concrete class
+#     def display(self):
+#         print("concrete class")
+
+# obj = Demo()
+# obj.display()
+
+
+
+# # Example 2 :=>
+# from abc import ABC,abstractmethod
+# class AbstractDemo(ABC):  #Abstract class
+#     @abstractmethod
+#     def display(self):
+#         None
+
+#     @abstractmethod
+#     def show(self):
+#         None
+
+# class Demo(AbstractDemo): #Concrete class
+#     def display(self):
+#         print("Should inherit all the methods")
+
+#     def show(self):
+#         print("Good Morning!")
+# obj = Demo()
+# obj.display()
+# obj.show()
+
+
+# # Example 3 :=>
+# from abc import ABC,abstractmethod
+# class AbstractDemo(ABC):  #Abstract class
+#     @abstractmethod
+#     def display(self):
+#         None
+
+#     @abstractmethod
+#     def show(self):
+#         None
+
+# class Demo1(AbstractDemo): #Abstract class
+#     def display(self):
+#         print("Should inherit all the methods")
+
+
+
+# class Demo2(AbstractDemo): #Concrete class
+#     def display(self):
+#         print("Should inherit all the methods to be an concrete class")
+
+#     def show(self):
+#         print("Have a Good Day!")
+# obj = Demo2()
+# # obj1 = Demo1() => it will create an error because now it will act as an abstarct class.
+# obj.display()
+# obj.show()
+
+# Example 4 :=>
+from abc import ABC, abstractmethod
+class Shape:
     @abstractmethod
-    def display(self):
+    def area(self):
         None
-
-class Demo(AbstractDemo): #Concrete class
-    def display(self):
-        print("concrete class")
-
-obj = Demo()
-obj.display()
-
-
-
-# Example 2 :=>
-from abc import ABC,abstractmethod
-class AbstractDemo(ABC):  #Abstract class
-    @abstractmethod
-    def display(self):
-        None
-
-    @abstractmethod
-    def show(self):
-        None
-
-class Demo(AbstractDemo): #Concrete class
-    def display(self):
-        print("Sould inherit all the methods")
-
-    def show(self):
-        print("Good Morning!")
-obj = Demo()
-obj.display()
-obj.show()
-
-
-# Example 3 :=>
-from abc import ABC,abstractmethod
-class AbstractDemo(ABC):  #Abstract class
-    @abstractmethod
-    def display(self):
-        None
-
-    @abstractmethod
-    def show(self):
-        None
-
-class Demo1(AbstractDemo): #Abstract class
-    def display(self):
-        print("Sould inherit all the methods")
+   
+class Rectangle(Shape):
+     def __init__(self,length,breadth):
+        self.length = length
+        self.breadth = breadth
+    
+     def area(self):
+         return self.length*self.breadth
+     
+rect = Rectangle(4,5)
+print('Rectangle Area:',rect.area())
 
 
 
-class Demo2(AbstractDemo): #Concrete class
-    def display(self):
-        print("Sould inherit all the methods to be an concrete class")
 
-    def show(self):
-        print("Have a Good Day!")
-obj = Demo2()
-# obj1 = Demo1() => it will create an error because now it will act as an abstarct class.
-obj.display()
-obj.show()
+# class BankAccount:
+#     def __init__(self, balance):
+#         self.balance = balance
+        
+#     def deposit(self, amount):
+#         self.balance += amount
+        
+#     def withdraw(self, amount):
+#         if amount > self.balance:
+#             print("Insufficient funds")
+#         else:
+#             self.balance -= amount
+
+
+# class AbstractBankAccount(BankAccount):
+#     @property
+#     def balance(self):
+#         return "****"
+    
+#     def deposit(self, amount):
+#         super().deposit(amount)
+#         print("Deposit successful.")
+        
+#     def withdraw(self, amount):
+#         super().withdraw(amount)
+#         print("Withdrawal successful.")
+
+
 
 
 # 2. why and when to use class variables and class methods :
