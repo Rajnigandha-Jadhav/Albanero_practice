@@ -70,4 +70,20 @@
 #     print("error")
 # print(a)
 
+def divide_numbers(a, b):
+    try:
+        result = a / b
+    except ZeroDivisionError:
+        print("Cannot divide by zero!")
+    return result
+print(divide_numbers(10,5))
 
+def find_ele(list1,i):
+    try:
+        result = list1[i]
+        return result
+    except IndexError:
+        print("index doesn't exist")
+    
+
+print(find_ele([1,5,6],2))    
