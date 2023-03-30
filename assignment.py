@@ -49,7 +49,7 @@ print(record_system.get_student_by_roll_no(2).name) # Output: "Mahesh"
 
 
 #Remove a student
-record_system.remove_student(2)
+record_system.remove_student(5)
 # print(len(record_system.get_all_students()))
 
 
