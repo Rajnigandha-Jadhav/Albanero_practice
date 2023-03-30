@@ -1,4 +1,14 @@
 # CLASS :=> A python class is a group of attributes and methods.
+# Constructor : In python, constructor is a special method when the instance or object has been 
+#   created then constructor will be automatically called.
+#  constructor helps to initilize objects in class.
+# constructor denoted by __init__()
+
+
+# SELF represents the instance of class. This handy keyword allows you 
+# to access variables, attributes, 
+# and methods of a defined class in Python.
+
 
 # ATTRIBUTES :=> Attributes are represented by variable that contains data.
 
