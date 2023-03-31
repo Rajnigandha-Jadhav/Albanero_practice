@@ -51,13 +51,13 @@
 #   logging.error("Exception occurred", exc_info=True)
 
 
-import logging
+# import logging
 
-logging.basicConfig(filename='example.log', level=logging.INFO)
-logging.debug('debug message')
-logging.info('This is an info message')
-logging.warning('This is a warning message')
-logging.error('This is an error message')
+# logging.basicConfig(filename='example.log', level=logging.INFO)
+# logging.debug('debug message')
+# logging.info('This is an info message')
+# logging.warning('This is a warning message')
+# logging.error('This is an error message')
 
 
 
@@ -74,3 +74,20 @@ logging.error('This is an error message')
 # CRITICAL: This is the highest level of logging and is used to record events that indicate a critical failure has occurred. Critical messages are typically used to alert developers or system administrators about issues that require immediate attention and may result in data loss or system failure.
 
 # In general, developers should use the appropriate logging level based on the severity of the event being recorded. Debug messages should only be used during development and testing, while info messages can be used to provide status updates and context about the application. Warning messages should be used to indicate potential issues, while error and critical messages should be used to indicate critical failures. It is important to use logging levels consistently throughout the application to ensure that the logs are useful and easy to analyze.
+
+
+
+import logging
+
+logging.basicConfig(filename='example.log', level=logging.INFO)
+a = "10"
+b = "0"
+try:
+    num1 = int(a)
+    num2 = int(b)
+    result = num1 / num2
+    print("Result: ", result)
+except ZeroDivisionError:
+    logging.exception("Tried to divide by zero")
+except ValueError:
+    logging.exception("Invalid input")

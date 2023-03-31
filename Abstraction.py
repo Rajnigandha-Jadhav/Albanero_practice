@@ -140,8 +140,9 @@ class Employee:
 e1 = Employee('Jay',10000)
 e2 = Employee('Vishal',25000)
 
-Employee.get_company_name()
+# Employee.get_company_name()
 print(e2.company_name)
+print(e1.company_name)
         
 # 3. static methods
 # In Python, a static method is a method that belongs to a class and does not require an instance of the class to be created before it can be called. It is defined using the @staticmethod decorator and can be called on the class itself, without instantiating any object of that class.

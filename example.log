@@ -1,3 +1,13 @@
 INFO:root:This is an info message
 WARNING:root:This is a warning message
 ERROR:root:This is an error message
+ERROR:root:Invalid input
+Traceback (most recent call last):
+  File "c:/Users/Rajnigandha Jadhav/Desktop/Python/logging1.py", line 86, in <module>
+    num1 = int(input("a"))
+ValueError: invalid literal for int() with base 10: '& "c:/Users/Rajnigandha Jadhav/Desktop/Python/venv/Scripts/python.exe" "c:/Users/Rajnigandha Jadhav/Desktop/Python/logging1.py"'
+ERROR:root:Tried to divide by zero
+Traceback (most recent call last):
+  File "c:/Users/Rajnigandha Jadhav/Desktop/Python/logging1.py", line 88, in <module>
+    result = num1 / num2
+ZeroDivisionError: division by zero
