@@ -1,0 +1,13 @@
+{% extends "home2.html" %}
+{% block content%}
+<h1>This is the main html page which uses template inheritance concept</h1>
+<h1>{{name}}</h1>
+<h1>{{l1}}</h1>
+
+<ol>
+    {%for i in l1%}
+    <li>{{i}}</li>
+    {%endfor%}
+</ol>
+<a href="{{url_for('friend')}}">Friends Page</a>
+{%endblock%}
