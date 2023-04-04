@@ -18,6 +18,7 @@ class MyClass:
         print("info :",self.name)
 
 a = MyClass("object a")
+
 b = MyClass("object b")
 a.show()
 print(a.name)
@@ -55,3 +56,18 @@ if weakref_obj() is None:
 else:
     print("The original object still exists")
 
+
+
+class MyClass:
+    x = "albanero"
+    def __init__(self, name):
+        self.name = name
+    def show(self):
+        print("info :",self.name)
+
+t1 = MyClass()
+t2 = t1
+t3 = t2
+
+t1 = None
+t2 = None
